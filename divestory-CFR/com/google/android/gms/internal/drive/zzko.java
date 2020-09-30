@@ -1,0 +1,9 @@
+/*
+ * Decompiled with CFR <Could not determine version>.
+ */
+package com.google.android.gms.internal.drive;
+
+public interface zzko {
+    public boolean zzan(int var1);
+}
+

@@ -1,0 +1,25 @@
+/*
+ * Decompiled with CFR <Could not determine version>.
+ */
+package com.google.common.util.concurrent;
+
+import java.lang.annotation.Annotation;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+final class Partially {
+    private Partially() {
+    }
+
+    @Documented
+    @Retention(value=RetentionPolicy.CLASS)
+    @Target(value={ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD})
+    static @interface GwtIncompatible {
+        public String value();
+    }
+
+}
+

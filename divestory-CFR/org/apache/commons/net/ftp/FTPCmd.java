@@ -1,0 +1,214 @@
+/*
+ * Decompiled with CFR <Could not determine version>.
+ */
+package org.apache.commons.net.ftp;
+
+public final class FTPCmd
+extends Enum<FTPCmd> {
+    private static final /* synthetic */ FTPCmd[] $VALUES;
+    public static final /* enum */ FTPCmd ABOR;
+    public static final FTPCmd ABORT;
+    public static final FTPCmd ACCOUNT;
+    public static final /* enum */ FTPCmd ACCT;
+    public static final /* enum */ FTPCmd ALLO;
+    public static final FTPCmd ALLOCATE;
+    public static final /* enum */ FTPCmd APPE;
+    public static final FTPCmd APPEND;
+    public static final /* enum */ FTPCmd CDUP;
+    public static final FTPCmd CHANGE_TO_PARENT_DIRECTORY;
+    public static final FTPCmd CHANGE_WORKING_DIRECTORY;
+    public static final /* enum */ FTPCmd CWD;
+    public static final FTPCmd DATA_PORT;
+    public static final /* enum */ FTPCmd DELE;
+    public static final FTPCmd DELETE;
+    public static final /* enum */ FTPCmd EPRT;
+    public static final /* enum */ FTPCmd EPSV;
+    public static final /* enum */ FTPCmd FEAT;
+    public static final FTPCmd FEATURES;
+    public static final FTPCmd FILE_STRUCTURE;
+    public static final FTPCmd GET_MOD_TIME;
+    public static final /* enum */ FTPCmd HELP;
+    public static final /* enum */ FTPCmd LIST;
+    public static final FTPCmd LOGOUT;
+    public static final FTPCmd MAKE_DIRECTORY;
+    public static final /* enum */ FTPCmd MDTM;
+    public static final /* enum */ FTPCmd MFMT;
+    public static final /* enum */ FTPCmd MKD;
+    public static final /* enum */ FTPCmd MLSD;
+    public static final /* enum */ FTPCmd MLST;
+    public static final /* enum */ FTPCmd MODE;
+    public static final FTPCmd MOD_TIME;
+    public static final FTPCmd NAME_LIST;
+    public static final /* enum */ FTPCmd NLST;
+    public static final /* enum */ FTPCmd NOOP;
+    public static final /* enum */ FTPCmd PASS;
+    public static final FTPCmd PASSIVE;
+    public static final FTPCmd PASSWORD;
+    public static final /* enum */ FTPCmd PASV;
+    public static final /* enum */ FTPCmd PORT;
+    public static final FTPCmd PRINT_WORKING_DIRECTORY;
+    public static final /* enum */ FTPCmd PWD;
+    public static final /* enum */ FTPCmd QUIT;
+    public static final /* enum */ FTPCmd REIN;
+    public static final FTPCmd REINITIALIZE;
+    public static final FTPCmd REMOVE_DIRECTORY;
+    public static final FTPCmd RENAME_FROM;
+    public static final FTPCmd RENAME_TO;
+    public static final FTPCmd REPRESENTATION_TYPE;
+    public static final /* enum */ FTPCmd REST;
+    public static final FTPCmd RESTART;
+    public static final /* enum */ FTPCmd RETR;
+    public static final FTPCmd RETRIEVE;
+    public static final /* enum */ FTPCmd RMD;
+    public static final /* enum */ FTPCmd RNFR;
+    public static final /* enum */ FTPCmd RNTO;
+    public static final FTPCmd SET_MOD_TIME;
+    public static final /* enum */ FTPCmd SITE;
+    public static final FTPCmd SITE_PARAMETERS;
+    public static final /* enum */ FTPCmd SMNT;
+    public static final /* enum */ FTPCmd STAT;
+    public static final FTPCmd STATUS;
+    public static final /* enum */ FTPCmd STOR;
+    public static final FTPCmd STORE;
+    public static final FTPCmd STORE_UNIQUE;
+    public static final /* enum */ FTPCmd STOU;
+    public static final /* enum */ FTPCmd STRU;
+    public static final FTPCmd STRUCTURE_MOUNT;
+    public static final /* enum */ FTPCmd SYST;
+    public static final FTPCmd SYSTEM;
+    public static final FTPCmd TRANSFER_MODE;
+    public static final /* enum */ FTPCmd TYPE;
+    public static final /* enum */ FTPCmd USER;
+    public static final FTPCmd USERNAME;
+
+    static {
+        FTPCmd fTPCmd;
+        ABOR = new FTPCmd();
+        ACCT = new FTPCmd();
+        ALLO = new FTPCmd();
+        APPE = new FTPCmd();
+        CDUP = new FTPCmd();
+        CWD = new FTPCmd();
+        DELE = new FTPCmd();
+        EPRT = new FTPCmd();
+        EPSV = new FTPCmd();
+        FEAT = new FTPCmd();
+        HELP = new FTPCmd();
+        LIST = new FTPCmd();
+        MDTM = new FTPCmd();
+        MFMT = new FTPCmd();
+        MKD = new FTPCmd();
+        MLSD = new FTPCmd();
+        MLST = new FTPCmd();
+        MODE = new FTPCmd();
+        NLST = new FTPCmd();
+        NOOP = new FTPCmd();
+        PASS = new FTPCmd();
+        PASV = new FTPCmd();
+        PORT = new FTPCmd();
+        PWD = new FTPCmd();
+        QUIT = new FTPCmd();
+        REIN = new FTPCmd();
+        REST = new FTPCmd();
+        RETR = new FTPCmd();
+        RMD = new FTPCmd();
+        RNFR = new FTPCmd();
+        RNTO = new FTPCmd();
+        SITE = new FTPCmd();
+        SMNT = new FTPCmd();
+        STAT = new FTPCmd();
+        STOR = new FTPCmd();
+        STOU = new FTPCmd();
+        STRU = new FTPCmd();
+        SYST = new FTPCmd();
+        TYPE = new FTPCmd();
+        USER = fTPCmd = new FTPCmd();
+        FTPCmd fTPCmd2 = ABOR;
+        FTPCmd fTPCmd3 = ACCT;
+        FTPCmd fTPCmd4 = ALLO;
+        FTPCmd fTPCmd5 = APPE;
+        FTPCmd fTPCmd6 = CDUP;
+        FTPCmd fTPCmd7 = CWD;
+        FTPCmd fTPCmd8 = DELE;
+        FTPCmd fTPCmd9 = EPRT;
+        FTPCmd fTPCmd10 = EPSV;
+        FTPCmd fTPCmd11 = FEAT;
+        FTPCmd fTPCmd12 = HELP;
+        FTPCmd fTPCmd13 = LIST;
+        FTPCmd fTPCmd14 = MDTM;
+        FTPCmd fTPCmd15 = MFMT;
+        FTPCmd fTPCmd16 = MKD;
+        FTPCmd fTPCmd17 = MLSD;
+        FTPCmd fTPCmd18 = MLST;
+        FTPCmd fTPCmd19 = MODE;
+        FTPCmd fTPCmd20 = NLST;
+        FTPCmd fTPCmd21 = NOOP;
+        FTPCmd fTPCmd22 = PASS;
+        FTPCmd fTPCmd23 = PASV;
+        FTPCmd fTPCmd24 = PORT;
+        FTPCmd fTPCmd25 = PWD;
+        FTPCmd fTPCmd26 = QUIT;
+        FTPCmd fTPCmd27 = REIN;
+        FTPCmd fTPCmd28 = REST;
+        FTPCmd fTPCmd29 = RETR;
+        FTPCmd fTPCmd30 = RMD;
+        FTPCmd fTPCmd31 = RNFR;
+        FTPCmd fTPCmd32 = RNTO;
+        FTPCmd fTPCmd33 = SITE;
+        FTPCmd fTPCmd34 = SMNT;
+        FTPCmd fTPCmd35 = STAT;
+        FTPCmd fTPCmd36 = STOR;
+        FTPCmd fTPCmd37 = STOU;
+        FTPCmd fTPCmd38 = STRU;
+        FTPCmd fTPCmd39 = SYST;
+        FTPCmd fTPCmd40 = TYPE;
+        $VALUES = new FTPCmd[]{fTPCmd2, fTPCmd3, fTPCmd4, fTPCmd5, fTPCmd6, fTPCmd7, fTPCmd8, fTPCmd9, fTPCmd10, fTPCmd11, fTPCmd12, fTPCmd13, fTPCmd14, fTPCmd15, fTPCmd16, fTPCmd17, fTPCmd18, fTPCmd19, fTPCmd20, fTPCmd21, fTPCmd22, fTPCmd23, fTPCmd24, fTPCmd25, fTPCmd26, fTPCmd27, fTPCmd28, fTPCmd29, fTPCmd30, fTPCmd31, fTPCmd32, fTPCmd33, fTPCmd34, fTPCmd35, fTPCmd36, fTPCmd37, fTPCmd38, fTPCmd39, fTPCmd40, fTPCmd};
+        ABORT = fTPCmd2;
+        ACCOUNT = fTPCmd3;
+        ALLOCATE = fTPCmd4;
+        APPEND = fTPCmd5;
+        CHANGE_TO_PARENT_DIRECTORY = fTPCmd6;
+        CHANGE_WORKING_DIRECTORY = fTPCmd7;
+        DATA_PORT = fTPCmd24;
+        DELETE = fTPCmd8;
+        FEATURES = fTPCmd11;
+        FILE_STRUCTURE = fTPCmd38;
+        GET_MOD_TIME = fTPCmd14;
+        LOGOUT = fTPCmd26;
+        MAKE_DIRECTORY = fTPCmd16;
+        MOD_TIME = fTPCmd14;
+        NAME_LIST = fTPCmd20;
+        PASSIVE = fTPCmd23;
+        PASSWORD = fTPCmd22;
+        PRINT_WORKING_DIRECTORY = fTPCmd25;
+        REINITIALIZE = fTPCmd27;
+        REMOVE_DIRECTORY = fTPCmd30;
+        RENAME_FROM = fTPCmd31;
+        RENAME_TO = fTPCmd32;
+        REPRESENTATION_TYPE = fTPCmd40;
+        RESTART = fTPCmd28;
+        RETRIEVE = fTPCmd29;
+        SET_MOD_TIME = fTPCmd15;
+        SITE_PARAMETERS = fTPCmd33;
+        STATUS = fTPCmd35;
+        STORE = fTPCmd36;
+        STORE_UNIQUE = fTPCmd37;
+        STRUCTURE_MOUNT = fTPCmd34;
+        SYSTEM = fTPCmd39;
+        TRANSFER_MODE = fTPCmd19;
+        USERNAME = fTPCmd;
+    }
+
+    public static FTPCmd valueOf(String string2) {
+        return Enum.valueOf(FTPCmd.class, string2);
+    }
+
+    public static FTPCmd[] values() {
+        return (FTPCmd[])$VALUES.clone();
+    }
+
+    public final String getCommand() {
+        return this.name();
+    }
+}
+

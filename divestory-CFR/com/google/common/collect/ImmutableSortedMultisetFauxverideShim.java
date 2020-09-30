@@ -1,0 +1,54 @@
+/*
+ * Decompiled with CFR <Could not determine version>.
+ */
+package com.google.common.collect;
+
+import com.google.common.collect.ImmutableMultiset;
+import com.google.common.collect.ImmutableSortedMultiset;
+
+abstract class ImmutableSortedMultisetFauxverideShim<E>
+extends ImmutableMultiset<E> {
+    ImmutableSortedMultisetFauxverideShim() {
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset.Builder<E> builder() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> copyOf(E[] arrE) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> of(E e) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> of(E e, E e2) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> of(E e, E e2, E e3) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> of(E e, E e2, E e3, E e4) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> of(E e, E e2, E e3, E e4, E e5) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Deprecated
+    public static <E> ImmutableSortedMultiset<E> of(E e, E e2, E e3, E e4, E e5, E e6, E ... arrE) {
+        throw new UnsupportedOperationException();
+    }
+}
+
