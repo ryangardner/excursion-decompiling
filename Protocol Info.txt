@@ -1,0 +1,81 @@
+Read info:
+a10c010200004f
+a1 - command (0xa1 = 161 = )
+
+----
+"Get dive log info"
+Request: c0020102010039
+
+c0 - command
+|  02 - subcommand 
+|  |  01 - direction (little endian)
+|  |  |  02 - length 
+|  |  |  |  0100 - data (#0001 as a little endian uint16... meaning, "dive #1" ?)
+|  |  |  |  |  
+|  |  |  |  |    
+0xC0 command = 192 = "COMMAND_GROUP_LOGS"
+   |  |  |  |
+   0x02 subcommand = 02
+              
+... not sure about subcommand 2... 
+---
+Response:
+    /*
+        void setContent(byte[] arrby) {
+            int n;
+            this.raw_response = arrby;
+            boolean bl = false;
+            this.command_group = (byte)(arrby[0] - 1);
+            this.sub_command = arrby[1];
+            this.direction = arrby[2];
+            this.data_length = n = ByteOp.b2ui(arrby[3]);
+            if (n < 0) {
+                this.error = Error.DATA_LENGTH_NEGATIVE;
+                return;
+            }
+            byte[] arrby2 = new byte[n];
+            this.data = arrby2;
+            System.arraycopy(arrby, 4, arrby2, 0, n);
+            this.checksum = arrby[this.data_length + 4];
+            n = WatchOp.getChecksum(arrby[0], this.sub_command, this.direction, arrby[3], this.data);
+            if (this.checksum == n) {
+                bl = true;
+            }
+            this.isChecksumGood = bl;
+        }*/
+
+Watch reply - the command is incremented by one (why? who knows)
+
+c1 -1 = command (c0 = command_group_logs)
+02 = subcommand 
+01 = direction (little endian)
+9c = length (156 bytes)
+
+watch reply content:
+01000000000000004a010000140a011405240000f70000000a000000a1040000a200000000000000010008004b0108004430312d35410000e803000000000000010000000200000025000000010000000000000018031b031a031a03190318031703170316031603160316031603160316031603000000000000000000000000000000000000000000000000000000000000000020fd000000000000
+
+
+  
+c102019c01000000000000004a010000140a011405240000f70000000a000000a1040000a200000000000000010008004b0108004430312d35410000e803000000000000010000000200000025000000010000000000000018031b031a031a03190318031703170316031603160316031603160316031603000000000000000000000000000000000000000000000000000000000000000020fd00000000000033
+
+   
+(Get dive profile??)
+
+
+Response: 
+Value: 
+020520a800a40004001b2000c102019c01000000000000004a010000140a011405240000f70000000a000000a1040000a200000000000000010008004b0108004430312d35410000e803000000000000010000000200000025000000010000000000000018031b031a031a03190318031703170316031603160316031603160316031603000000000000000000000000000000000000000000000000000000000000000020fd00000000000033
+
+... No further requests for it (app already had it?)
+
+--
+After deleting logs and resyncing...
+
+Request:
+Request: c0020102010039
+
+Reponse:
+020620a800a40004001b2000c102019c01000000000000004a010000140a011405240000f70000000a000000a1040000a200000000000000010008004b0108004430312d35410000e803000000000000010000000200000025000000010000000000000018031b031a031a03190318031703170316031603160316031603160316031603000000000000000000000000000000000000000000000000000000000000000020fd00000000000033
+
+Then the app sends command: 
+c003010601000000000034
