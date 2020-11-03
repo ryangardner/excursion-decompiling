@@ -10,6 +10,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
+import java.util.Base64;
 
 public class ByteOp {
    private static byte[] HEX_ARRAY;
@@ -399,5 +400,9 @@ public class ByteOp {
                  .digit(s.charAt((i * 2) + 1), 16));
       }
       return bytes;
+   }
+
+   public static byte[] fromBase64String(String b) {
+      return Base64.getDecoder().decode(b);
    }
 }

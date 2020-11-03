@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.nio.ByteOrder;
+import java.util.StringJoiner;
 
 public class DataStruct {
 
@@ -682,6 +683,14 @@ public class DataStruct {
       public void update(int var1, DataStruct.DiveProfileDatum var2) {
          this.list.set(var1, var2);
       }
+
+      @Override
+      public String toString() {
+         return new StringJoiner(", ", DiveProfileData.class.getSimpleName() + "[", "]")
+                 .add("WATCH_BYTE_ORDER=" + WATCH_BYTE_ORDER)
+                 .add("list=" + Arrays.toString(list.toArray()))
+                 .toString();
+      }
    }
 
    public static class DiveProfileDatum {
@@ -731,6 +740,25 @@ public class DataStruct {
          this.value = 0;
       }
 
+      @Override
+      public String toString() {
+         return new StringJoiner(", ", DiveProfileDatum.class.getSimpleName() + "[", "]")
+                 .add("alarm_type=" + alarm_type)
+                 .add("ceiling=" + ceiling)
+                 .add("cns=" + cns)
+                 .add("data_type=" + data_type)
+                 .add("deco_state=" + deco_state)
+                 .add("depth=" + depth)
+                 .add("dive_log_index=" + dive_log_index)
+                 .add("start_time=" + start_time)
+                 .add("stop_time=" + stop_time)
+                 .add("temperature=" + temperature)
+                 .add("time=" + time)
+                 .add("time_elpased=" + time_elpased)
+                 .add("value=" + value)
+                 .add("watch_serial_number='" + watch_serial_number + "'")
+                 .toString();
+      }
    }
 
    static enum FIRMWARE_FILE_VERSION {
